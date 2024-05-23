@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
+import TowerCanvas from '@/modules/canvas/TowerCanvas'
 
 const HidrophonicTowerSummary = () => {
   return (
@@ -10,7 +10,7 @@ const HidrophonicTowerSummary = () => {
               PRODUCTOS
             </h2>
           </div>
-          <div className="mt-24 grid md:grid-cols-3 grid-cols-1">
+          <div className="mt-24 h-[50vh] grid md:grid-cols-3 grid-cols-1">
             <div>
               <h3 className="mb-4 text-3xl font-bold text-green-700">
                 Nuestra Torre Hidropónica
@@ -20,13 +20,7 @@ const HidrophonicTowerSummary = () => {
               </p>
             </div>
             <div>
-              <Image
-                  src="/images/htower.webp"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="h-full w-auto"
-                  alt=""/>
+              <TowerCanvas/>
             </div>
             <div>
               <p>

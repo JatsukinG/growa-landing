@@ -10,6 +10,7 @@ export default function Home() {
         <WhatIsGrowa/>
         <Advantages/>
         <HidrophonicTowerSummary/>
+        <div className="h-screen"></div>
       </main>
   )
 }
