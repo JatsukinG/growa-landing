@@ -10,29 +10,8 @@ const HidrophonicTowerSummary = () => {
               PRODUCTOS
             </h2>
           </div>
-          <div className="mt-24 h-[50vh] grid md:grid-cols-3 grid-cols-1">
-            <div>
-              <h3 className="mb-4 text-3xl font-bold text-green-700">
-                Nuestra Torre Hidropónica
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum deserunt iste modi quam quisquam.
-              </p>
-            </div>
-            <div>
-              <TowerCanvas/>
-            </div>
-            <div>
-              <p>
-                Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
-                reasonable.
-
-                The generated Lorem Ipsum is therefore always free from repetition injected humour, or
-                non-characteristic
-                words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                classi
-              </p>
-            </div>
+          <div className="mt-24 h-[80vh]">
+            <TowerCanvas/>
           </div>
         </div>
       </section>
