@@ -28,6 +28,15 @@ const config: Config = {
         '2xl': '13rem',
       },
     },
+    animation: {
+      'background-debounce': 'background-debounce 10s linear infinite',
+    },
+    keyframes: {
+      'background-debounce': {
+        '0%,100%': { backgroundPosition: '50% 45%' },
+        '50%': { backgroundPosition: '50% 65%' },
+      },
+    },
   },
   plugins: [],
 }

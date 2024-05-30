@@ -9,7 +9,7 @@ const TowerCanvas = () => {
       <div className="w-full h-full">
         <Canvas camera={{ zoom: 15, position: [0, 40, 100] }}>
           <ambientLight intensity={1}/>
-          <PresentationControls>
+          <PresentationControls enabled>
             <group position={[0, -5, 0]}>
               <TowerModel/>
             </group>
