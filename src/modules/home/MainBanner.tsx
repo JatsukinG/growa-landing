@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react'
-import Navbar from '@/components/navbar'
-import AnimatedCursor from '@/components/cursor/AnimatedCursor'
 import Image from 'next/image'
+import Navbar from '@/components/navbar'
 
 const MainBanner = () => {
   return (
@@ -9,7 +7,7 @@ const MainBanner = () => {
           className="h-screen items-center flex flex-col bg-no-repeat bg-fixed bg-top bg-cover"
           style={{ backgroundImage: 'url(/images/bg2.jpg)' }}>
         <Navbar/>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="my-auto container relative">
           <div className="grid grid-cols-1 justify-center text-center">
             <div className="flex flex-col items-center">
@@ -31,7 +29,6 @@ const MainBanner = () => {
             </div>
           </div>
         </div>
-        <AnimatedCursor/>
       </section>
   )
 }

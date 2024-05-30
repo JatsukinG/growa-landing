@@ -1,37 +1,37 @@
-import { FaArrowRight, FaMendeley } from 'react-icons/fa'
-import Link from 'next/link'
 import Image from 'next/image'
+import clsx from 'clsx'
+import { FaCarrot, FaClock, FaCompressArrowsAlt, FaLeaf, FaPaintBrush, FaRegSmile } from 'react-icons/fa'
 
 const advantages = [
   {
-    icon: FaMendeley,
-    title: 'Digital Marketing',
-    desc: 'The phrasal sequence of the is now so that many campaign and benefit',
+    icon: FaRegSmile,
+    title: 'Fácil de Usar',
+    desc: 'No necesitas experiencia previa en jardinería. Nuestro sistema es simple y automatizado.',
   },
   {
-    icon: FaMendeley,
-    title: 'Investing',
-    desc: 'The phrasal sequence of the is now so that many campaign and benefit',
+    icon: FaCompressArrowsAlt,
+    title: 'Ahorro de Espacio',
+    desc: 'Diseño vertical compacto, ideal para cualquier hogar, incluso apartamentos pequeños.',
   },
   {
-    icon: FaMendeley,
-    title: 'Mortgage Advisor',
-    desc: 'The phrasal sequence of the is now so that many campaign and benefit',
+    icon: FaLeaf,
+    title: 'Ecológico',
+    desc: 'Consume hasta un 90% menos de agua y no requiere pesticidas, promoviendo un cultivo sostenible.',
   },
   {
-    icon: FaMendeley,
-    title: 'Real Estate',
-    desc: 'The phrasal sequence of the is now so that many campaign and benefit',
+    icon: FaClock,
+    title: 'Producción Rápida',
+    desc: 'Las plantas crecen más rápido gracias a la entrega directa de nutrientes.',
   },
   {
-    icon: FaMendeley,
-    title: 'Payroll & Accounting',
-    desc: 'The phrasal sequence of the is now so that many campaign and benefit',
+    icon: FaPaintBrush,
+    title: 'Decorativo',
+    desc: 'Diseño elegante que añade un toque moderno y natural a tu hogar.',
   },
   {
-    icon: FaMendeley,
-    title: 'Branch Registration',
-    desc: 'The phrasal sequence of the is now so that many campaign and benefit',
+    icon: FaCarrot,
+    title: 'Alimentos Frescos',
+    desc: 'Cultiva tus propias verduras y hierbas frescas en casa, sin químicos.',
   },
 ]
 
@@ -49,33 +49,37 @@ const Advantages = () => {
         </div>
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Ventajas</h3>
+            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
+              ¿Por Qué Elegir Nuestras Torres Hidropónicas?
+            </h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">Start working with Techwind that can provide everything you
-              need to generate awareness, drive traffic, connect.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">
+              Beneficios que mejoran tu hogar y el medio ambiente
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
             {advantages.map((item, index) => {
               let Icons = item.icon
               return (
-                  <div key={index}
-                       className="group p-6 rounded-lg shadow dark:shadow-gray-800 bg-white dark:bg-slate-900 hover:-translate-y-2 transition-all duration-500 ease-in-out">
-                    <div
-                        className="w-16 h-16 bg-green-600/5 group-hover:bg-green-600 group-hover:text-white border-2 border-green-600/20 text-green-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                  <div
+                      key={index}
+                      className={clsx([
+                        'group p-6 rounded-lg shadow bg-white transition-all duration-500 ease-in-out',
+                        'hover:-translate-y-2 dark:shadow-gray-800 dark:bg-slate-900',
+                      ])}>
+                    <div className={clsx([
+                      'w-16 h-16 rounded-lg text-2xl flex align-middle justify-center items-center',
+                      'text-green-600 bg-green-600/5 shadow-sm border-2 border-green-600/20',
+                      'group-hover:text-white group-hover:bg-green-600 dark:shadow-gray-800',
+                      'transition-all duration-500 ease-in-out',
+                    ])}>
                       <Icons className="w-6 h-6"/>
                     </div>
 
                     <div className="content mt-7">
-                      <Link href="/page-services"
-                            className="title h5 text-lg font-medium hover:text-green-600">{item.title}</Link>
+                      <p className="title h5 text-lg font-medium hover:text-green-600">{item.title}</p>
                       <p className="text-slate-400 mt-3">{item.desc}</p>
-
-                      <div className="mt-5">
-                        <Link href="#"
-                              className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-green-600 hover:text-green-600 after:bg-green-600 duration-500">Read
-                          More <FaArrowRight className="ms-2 text-[10px]"/></Link>
-                      </div>
                     </div>
                   </div>
               )
