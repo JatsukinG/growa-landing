@@ -7,10 +7,10 @@ import { TowerModel } from '@/modules/models/Tower'
 const TowerCanvas = () => {
   return (
       <div className="w-full h-full">
-        <Canvas camera={{ zoom: 15, position: [0, 40, 100] }}>
-          <ambientLight intensity={1}/>
-          <PresentationControls enabled>
-            <group position={[0, -5, 0]}>
+        <Canvas camera={{ fov: 7, position: [-50, 40, -50] }}>
+          <ambientLight intensity={2}/>
+          <PresentationControls enabled snap>
+            <group position={[0, -2, 0]}>
               <TowerModel/>
             </group>
           </PresentationControls>
