@@ -16,7 +16,7 @@ const advantages = [
   {
     icon: FaLeaf,
     title: 'Ecológico',
-    desc: 'Consume hasta un 90% menos de agua y no requiere pesticidas, promoviendo un cultivo sostenible.',
+    desc: 'Consume menos de agua gracias a la recirculación, promoviendo un cultivo sostenible.',
   },
   {
     icon: FaClock,
