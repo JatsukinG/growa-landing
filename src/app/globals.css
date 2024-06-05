@@ -15,8 +15,4 @@
         overflow: auto;
         scroll-behavior: smooth;
     }
-
-    canvas {
-        touch-action: none;
-    }
 }
