@@ -10,7 +10,7 @@ const HidrophonicTowerSummary = () => {
               'text-center md:text-6xl sm:text-5xl text-4xl font-extrabold uppercase',
               'bg-bg3 bg-cover bg-clip-text text-transparent animate-background-debounce',
             ])}>
-              Nuestra torre hidropónica
+              Nuestra torre aeropónica
             </h2>
           </div>
           <div

@@ -50,7 +50,7 @@ const Advantages = () => {
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center">
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
-              ¿Por Qué Elegir Nuestras Torres Hidropónicas?
+              ¿Por Qué Elegir Nuestras Torres Aeropónicas?
             </h3>
 
             <p className="text-slate-400 max-w-xl mx-auto">
