@@ -9,20 +9,20 @@ import Image from 'next/image'
 
 const items = [
   {
-    to: '/',
+    to: '#main-banner',
     name: 'Inicio',
   },
   {
-    to: '/products',
-    name: 'Productos',
-  },
-  {
-    to: '/about-us',
+    to: '#about-us',
     name: 'Acerca de nosotros',
   },
   {
-    to: '/contact',
-    name: 'Contacto',
+    to: '#advantages',
+    name: 'Ventajas',
+  },
+  {
+    to: '#product',
+    name: 'Producto',
   },
 ]
 
@@ -37,10 +37,10 @@ const Navbar = () => {
   return (
       <nav className="relative w-full z-50">
         <div className="lg:px-24 sm:px-12 px-4 flex items-center justify-between">
-          <Link href="/" className="logo">
-            <div className="absolute top-0 bg-white px-4 py-16">
+          <Link href="#main-banner" className="logo">
+            <div className="absolute top-0 bg-white p-4">
               <Image
-                  src="/images/icon_black.svg"
+                  src="/images/isotipo_black.svg"
                   alt="logo"
                   sizes="100vw"
                   width={0}

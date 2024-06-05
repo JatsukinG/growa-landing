@@ -1,3 +1,4 @@
+import Footer from '@/components/footer'
 import Advantages from '@/modules/home/Advantages'
 import MainBanner from '@/modules/home/MainBanner'
 import WhatIsGrowa from '@/modules/home/WhatIsGrowa'
@@ -10,7 +11,7 @@ export default function Home() {
         <WhatIsGrowa/>
         <Advantages/>
         <HidrophonicTowerSummary/>
-        <div className="h-screen"></div>
+        <Footer/>
       </main>
   )
 }

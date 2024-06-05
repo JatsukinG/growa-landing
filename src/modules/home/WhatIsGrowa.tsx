@@ -1,31 +1,62 @@
 import React from 'react'
 import Image from 'next/image'
+import { FaCheckCircle } from 'react-icons/fa'
 
 const WhatIsGrowa = () => {
   return (
-      <section className="relative md:py-24 py-16">
+      <section id="about-us" className="relative md:py-12 py-8">
         <div className="container relative">
           <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-            <div className="h-full w-full lg:col-span-5 md:col-span-6 bg-bg3">
+            <div className="w-full lg:col-span-5 md:col-span-6 px-24 py-8">
+              <Image
+                  src="/images/htower.png"
+                  alt="logo"
+                  sizes="100vw"
+                  width={0}
+                  height={0}
+                  className="w-full h-auto rounded-2xl"/>
             </div>
-
             <div className="lg:col-span-7 md:col-span-6">
               <div className="ms-6">
-                <p className="text-slate-400 text-lg mb-0">The phrasal sequence of the Lorem Ipsum text is now so
-                  widespread and commonplace that many DTP programmes can generate dummy text using the starting
-                  sequence Lorem ipsum.</p>
+                <h5 className="text-2xl font-bold">Que es Growa?</h5>
+                <p className="mt-4 text-slate-400">
+                  Nuestro objetivo en Growa es producir alimentos limpios basados en los principios de sostenibilidad
+                  ambiental, optimización, innovación y aprovechamiento del espacio.
+                </p>
+              </div>
+            </div>
+          </div>
 
-                <h4 className="my-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Food is our
-                  common ground, <br/> a universal experience.</h4>
-
-                <p className="text-slate-400">Fortunately, the phrase Lorem Ipsum is now recognized by electronic
-                  pre-press systems and, when found, an alarm can be raised. This avoids a publication going to print
-                  with overlooked dummy text.</p>
-
-                <div className="mt-6">
-                  {/*<Image src="/images/sign.png" width={128} height={32} alt=""/>*/}
+          <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+            <div className="md:order-1 order-2 lg:col-span-7 md:col-span-6">
+              <div className="ms-6">
+                <h5 className="text-2xl font-bold">Qué son las Torres Growa?</h5>
+                <p className="mt-4 text-slate-400">
+                  es un sistema de cultivo doméstico alternativo e innovador que busca concientizar a la gente y brindar
+                  alternativas de sostenibilidad
+                </p>
+                <div className="mt-4 flex items-center gap-2">
+                  <span className="text-green-700"><FaCheckCircle/></span>
+                  <p className="text-slate-400 font-bold">Innovación</p>
+                </div>
+                <div className="mt-4 flex items-center gap-2">
+                  <span className="text-green-700"><FaCheckCircle/></span>
+                  <p className="text-slate-400 font-bold">Optimización</p>
+                </div>
+                <div className="mt-4 flex items-center gap-2">
+                  <span className="text-green-700"><FaCheckCircle/></span>
+                  <p className="text-slate-400 font-bold">Reutilización</p>
                 </div>
               </div>
+            </div>
+            <div className="md:order-2 order-1w-full lg:col-span-5 md:col-span-6 px-12 py-8">
+              <Image
+                  src="/images/htower.jpeg"
+                  alt="logo"
+                  sizes="100vw"
+                  width={0}
+                  height={0}
+                  className="w-full h-auto rounded-2xl"/>
             </div>
           </div>
         </div>

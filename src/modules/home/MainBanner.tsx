@@ -4,6 +4,7 @@ import Navbar from '@/components/navbar'
 const MainBanner = () => {
   return (
       <section
+          id="main-banner"
           className="relative h-screen items-center flex flex-col bg-no-repeat bg-fixed bg-top bg-cover"
           style={{ backgroundImage: 'url(/images/bg2.jpg)' }}>
         <Navbar/>
@@ -23,7 +24,7 @@ const MainBanner = () => {
               </p>
               <div className="mt-8">
                 <button className="px-8 py-4 rounded-full bg-white text-green-800 font-bold">
-                  Consiguela la tuya
+                  Reservar <strong>ahora mismo</strong>
                 </button>
               </div>
             </div>

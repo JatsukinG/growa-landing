@@ -37,7 +37,7 @@ const advantages = [
 
 const Advantages = () => {
   return (
-      <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+      <section id="advantages" className="relative md:py-24 py-16 bg-gray-50">
         <div className="absolute bottom-0 right-0">
           <Image
               src="/plant_botton.png"
@@ -66,12 +66,12 @@ const Advantages = () => {
                       key={index}
                       className={clsx([
                         'group p-6 rounded-lg shadow bg-white transition-all duration-500 ease-in-out',
-                        'hover:-translate-y-2 dark:shadow-gray-800 dark:bg-slate-900',
+                        'hover:-translate-y-2',
                       ])}>
                     <div className={clsx([
                       'w-16 h-16 rounded-lg text-2xl flex align-middle justify-center items-center',
                       'text-green-600 bg-green-600/5 shadow-sm border-2 border-green-600/20',
-                      'group-hover:text-white group-hover:bg-green-600 dark:shadow-gray-800',
+                      'group-hover:text-white group-hover:bg-green-600',
                       'transition-all duration-500 ease-in-out',
                     ])}>
                       <Icons className="w-6 h-6"/>
